@@ -1,18 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   background-color: #09090b; /* zinc-950 */
-  color: #e2e8f0; /* slate-200 */
 }
 
-body {
+/* Скидаємо все, щоб флекс-центрування в App.jsx працювало */
+html, body, #root {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden; /* Забороняємо подвійні скроли */
   background-color: #09090b;
-  width: 100%;
-  min-height: 100vh;
-  font-family: monospace;
-}
-
-#root {
-  width: 100%;
-  min-height: 100vh;
 }
