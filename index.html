@@ -4,7 +4,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>defense-entropy-game</title>
+    <title>Ентропія Оборони</title>
+    <!-- ЦЕЙ СКРИПТ АВТОМАТИЧНО ПІДКЛЮЧАЄ ДИЗАЙН -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              slate: { 800: '#1e293b', 900: '#0f172a' },
+              zinc: { 800: '#27272a', 900: '#18181b', 950: '#09090b' },
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
